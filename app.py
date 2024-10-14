@@ -63,4 +63,4 @@ with gr.Blocks(title="Extractor de entidades clínicas") as demo:
     )
     gr.Examples(examples=examples, inputs=input, label="Ejemplos")
 
-demo.launch(server_port=7860)
+demo.launch(server_name="0.0.0.0")

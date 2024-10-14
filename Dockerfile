@@ -7,6 +7,7 @@ WORKDIR /app
 COPY requirements.txt requirements.txt
 
 # RUN apt-get update --allow-insecure-repositories && apt-get install -y pkg-config git make
+RUN apt-get update --allow-insecure-repositories && apt-get install -y curl
 
 RUN pip3 install -r requirements.txt
 
